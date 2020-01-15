@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t Nimal-zz/docker-react -f Dockerfile.dev .
+  - docker build -t nimal-zz/docker-react -f Dockerfile.dev .
 
 
 script:
-  - docker run Nimal-zz/docker-react npm run test -- --coverage
+  - docker run nimal-zz/docker-react npm run test -- --coverage
